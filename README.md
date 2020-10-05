@@ -42,8 +42,16 @@ note: using npm from inside python virtual environment gave me errors, deactivat
 - `pip install pipenv`
 - `pipenv install`
 
+run migrations:
+- `flask db init`
+- `flask db migrate`
+- `flask db upgrade`
+
+running `flask deploy` will upgrade the database and set the secret key, add additional deployment tasks to the deploy command
+
 ### testing
 
 - run the command `flask test`
+- the command will the tests located in the `tests/` directory
 
 all is good.
