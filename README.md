@@ -52,6 +52,6 @@ running `flask deploy` will upgrade the database and set the secret key, add add
 ### testing
 
 - run the command `flask test`
-- the command will the tests located in the `tests/` directory
+- the command will run the tests located in the `tests/` directory
 
 all is good.
