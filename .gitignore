@@ -1,0 +1,23 @@
+.vscode/
+.idea/
+
+vendor/
+*.txt
+
+tmp/
+coverage/
+
+# python
+__pycache__/
+venv/
+instance/
+
+.env
+*.pyc
+*.db
+*.sqlite
+*.log
+chromedriver.exe
+
+# javascript
+node_modules/

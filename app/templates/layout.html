@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--### Third-party stylesheets ###-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.min.css')}}">
+    <!--### Project stylesheets ###-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    {% block head %}{% endblock %}
+    <title>Title {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <!--### Third-part javascript ###-->
+    <script src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='node_modules/bootstrap/dist/bootstrap.bundle.min.js')}}"></script>
+    <!--### Project javascript ###-->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>
