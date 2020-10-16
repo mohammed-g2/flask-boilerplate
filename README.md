@@ -11,7 +11,6 @@
 - flask-sqlalchemy
 - flask-migrate
 - flask-login
-- flask-mail
 
 ### frontend packages
 
