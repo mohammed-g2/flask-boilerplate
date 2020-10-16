@@ -12,7 +12,6 @@ flask-login = "*"
 flask-wtf = "*"
 python-dotenv = "*"
 flask-migrate = "*"
-flask-mail = "*"
 
 [requires]
 python_version = "3.8"
