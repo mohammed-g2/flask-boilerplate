@@ -7,21 +7,8 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config():
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    # secert key for development purposes, choose different key in production
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    # log slow database queries
-    SQLALCHEMY_RECORD_QUERIES = os.environ.get('SQLALCHEMY_RECORD_QUERIES', '0').lower() in ['true', '1']
-    SLOW_DB_QUERY_TIME = 0.5
-    # mail configurations
-    MAIL_SUBJECT_PREFIX = ''
-    MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'localhost'
-    MAIL_PORT = int(os.environ.get('MAIL_PORT') or '25')
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', '1').lower() in ['true', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    MAIL_SENDER = os.environ.get('MAIL_SENDER')
-    ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
-    
+   
     @staticmethod
     def init_app(app):
         pass
